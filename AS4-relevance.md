@@ -30,8 +30,9 @@ History of this file:
 
 Still unpublished as of 2026-11-13, and therefore still unknown:
 
-* the XSDs of the Spanish extensions, the Schematron files and the error list (only single error
-  codes appear in the examples);
+* the XSDs of the Spanish extensions and the Schematron files. **(updated 2026-11-23)** The error
+  code lists and the business rules (as draft PDFs) are now published, see
+  `aeat/2026-11-23-documentacion-spfe/`. The code `SPFE-GEN-45` from the examples is not in them;
 * access details for the PRE test environment (the endpoints are in the WSDLs);
 * an authoritative statement on Anexo I - the version on the developer portal (2026-10-21)
   differs from the one in the BOE, see section 4.

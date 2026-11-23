@@ -9,7 +9,7 @@ repository, including its history.
 
 Everything below is derived from the documents stored in this repository, not from secondary sources.
 
-Status: 2026-11-13.
+Status: 2026-11-23.
 
 ## Why this is relevant for phase4
 
@@ -38,6 +38,10 @@ See [AS4-relevance.md](AS4-relevance.md) for the detailed analysis and the list 
 * 2026-10-16 - first SPFE developer documentation incl. WSDLs on the AEAT developer portal
 * 2026-10-29 - revised WSDLs (SOAP 1.2)
 * 2026-11-10 - request/response examples for all SPFE services
+* 2026-11-19 - business rules for Anexo I and Anexo II (v0.1, draft, PDF only); WSDL package and
+  service catalogue re-uploaded with minor corrections
+* 2026-11-23 - error code lists (`errores_*.properties`) and the BG/BT to UBL 2.5 XPath lists on
+  the portal (date of the HTTP `Last-Modified` header; the first publication may be earlier)
 * ~2027-08-06 - latest date for the SPFE to be available (Order DA segunda: at least two months
   before the first effective application)
 * ~2027-10-06 - e-invoicing and payment reporting for turnover > EUR 8 m; obligations for private
@@ -59,11 +63,15 @@ an entry into force on 2026-10-01.
 | [aeat/2026-10-16-documentacion-spfe/](aeat/2026-10-16-documentacion-spfe/) | First SPFE developer documentation: Anexo I, WSDL package (SOAP 1.1 bindings), service catalogue, input/output formats, validation description, SendInvoice example |
 | [aeat/2026-10-29-documentacion-spfe/](aeat/2026-10-29-documentacion-spfe/) | Revised documentation: Anexo I and II, WSDL package with SOAP 1.2 bindings, service catalogue v0.1.3, input/output formats v0.1.2, SendInvoice example. Unchanged files are not repeated |
 | [aeat/2026-11-13-documentacion-spfe/](aeat/2026-11-13-documentacion-spfe/) | Service catalogue v0.1.5 and the request/response examples 02-09 for all other services. Unchanged files are not repeated |
+| [aeat/2026-11-23-documentacion-spfe/](aeat/2026-11-23-documentacion-spfe/) | Business rules for Anexo I (BR-ES-1 to BR-ES-31 plus rules per regime and VAT category) and Anexo II, both v0.1 of 2026-11-19 and still drafts; error code lists (business `RULE_*` and technical 4xxx/5xxx/8xxx); BG/BT to UBL 2.5 XPath lists incl. BG-ES/BT-ES; WSDL package (only `LEEME.txt` changed); service catalogue v0.1.5 (revision table and one endpoint corrected). Unchanged files are not repeated. No Schematron or other machine-readable rules |
 
 In each `documentacion-spfe` folder, `soap/` and `wsdl/` hold the extracted contents of the ZIP
 files next to them.
 
 `*.txt` files are `pdftotext -layout` extractions of the PDF next to them, kept for searching.
+
+`*.properties` files are stored byte-for-byte as downloaded: CRLF line endings, the `errores_*`
+files in ISO-8859-1.
 
 ## Source pages
 
